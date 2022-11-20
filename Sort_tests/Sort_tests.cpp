@@ -12,7 +12,7 @@ namespace Sorttests
 
 		TEST_METHOD(TestMethod1)
 		{
-			int items[10] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
+			int items[] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
 			LinkedListSequence<int> list(items, 10);
 			Sequence<int>* seq = &list;
 			seq->binary_insertion_sort_(comparator_ascending_order);
@@ -22,7 +22,7 @@ namespace Sorttests
 		}
 		TEST_METHOD(TestMethod2)
 		{
-			int items[10] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
+			int items[] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
 			LinkedListSequence<int> list(items, 10);
 			Sequence<int>* seq = &list;
 			seq->merge_sort_(comparator_ascending_order);
@@ -32,7 +32,7 @@ namespace Sorttests
 		}
 		TEST_METHOD(TestMethod3)
 		{
-			int items[10] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
+			int items[] = { 5676, 35, 890, 334, 46, 1234, 24, 13, 672, 1 };
 			LinkedListSequence<int> list(items, 10);
 			Sequence<int>* seq = &list;
 			seq->quick_sort_(comparator_ascending_order);

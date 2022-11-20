@@ -92,6 +92,7 @@ void ArraySequence<T>::remove_first() {
     if (this->get_length() != length)
         --size;
 }
+
 template <class T>
 void ArraySequence<T>::merge_sort_(bool(*comparator_ascending_order)(const T&, const T&)) {
     this->dynamic_array->merge_sort_(comparator_ascending_order);

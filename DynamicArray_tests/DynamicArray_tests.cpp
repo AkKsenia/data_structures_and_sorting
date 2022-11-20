@@ -64,14 +64,8 @@ namespace UnitTest2
 		}
 		TEST_METHOD(TestMethod7)
 		{
-			int* items = new int[5];
-			items[0] = 24;
-			items[1] = 5;
-			items[2] = 13;
-			items[3] = 246;
-			items[4] = 2094;
+			int items[] = { 24,5,13,246,2094 };
 			DynamicArray<int> arr1(items, 5);
-			delete[] items;
 			arr1.remove_first();
 			int elem_expected = 5;
 			int elem_actual = arr1.get(0);

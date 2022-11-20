@@ -12,6 +12,7 @@ public:
     ArraySequence();
     ArraySequence(const DynamicArray<T>& old_version);
     ArraySequence(DynamicArray<T>&& old_version);
+
     const T& get_first() override;
     const T& get_last() override;
     const T& get(int index) override;
@@ -23,6 +24,7 @@ public:
     void prepend(const T& item) override;
     void insert_at(const T& item, int index) override;
     void concat(Sequence<T>& arr) override;
+
     void merge_sort_(bool(*comparator_ascending_order)(const T&, const T&)) override;
     void quick_sort_(bool(*comparator_ascending_order)(const T&, const T&)) override;
     void binary_insertion_sort_(bool(*comparator_ascending_order)(const T&, const T&)) override;

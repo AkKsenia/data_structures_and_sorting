@@ -69,6 +69,7 @@ void LinkedListSequence<T>::concat(Sequence<T>& list) {
         ++j;
     }
 }
+
 template <class T>
 void LinkedListSequence<T>::merge_sort_(bool(*comparator_ascending_order)(const T&, const T&)) {
     this->linked_list->merge_sort_(comparator_ascending_order);

@@ -14,6 +14,7 @@ public:
     virtual void concat(Sequence<T>&) = 0;
     virtual void insert_at(const T& item, int index) = 0;//может выбрасывать исключение IndexOutOfRange
     virtual void get_subsequence(int startindex, int endindex) = 0;//может выбрасывать исключение IndexOutOfRange
+
     //быстрая сортировка
     virtual void quick_sort_(bool(*comparator_ascending_order)(const T&, const T&)) = 0;
     //сортировка двоичными вставками

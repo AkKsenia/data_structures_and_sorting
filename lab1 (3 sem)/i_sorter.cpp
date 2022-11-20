@@ -1,7 +1,6 @@
 #include "i_sorter.h"
 #include "library.h"
 
-
 template <class T>
 void ISorter<T>::quick_sort(Sequence<T>* seq, bool(*comparator_ascending_order)(const T&, const T&)) {
     high_resolution_clock::time_point t_start, t_end;
@@ -41,6 +40,7 @@ void ISorter<T>::merge_sort(Sequence<T>* seq, bool(*comparator_ascending_order)(
     cout << "Время, которое было затрачено на работу алгоритма, составило " << time_span.count() << " секунд" << endl;
     cout << endl;
 }
+
 template<class T>
 void ISorter<T>::message_before(Sequence<T>* seq) {
     cout << "Последовательность до сортировки: " << endl;
